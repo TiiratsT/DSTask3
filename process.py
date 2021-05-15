@@ -55,8 +55,7 @@ class Process(threading.Thread):
 
     # Sets the time when thread is unavailable and will not respond to any request or commands
     def timeFailure(self, seconds):
-        self.timeToBeFailed = datetime.now() + timedelta(0,seconds)
-        self.lock.acquire()
+        self.timeToBeFailed = datetime.now() + timedelta(0, seconds)
         self.printStatement(self.name + " Time failure for " + str(seconds) + " seconds")
 
     # Prints out the consistency history of the process
