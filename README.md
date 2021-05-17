@@ -8,4 +8,4 @@ Remove and Time-failure command. The only command not implemented is Arbitrary-f
 error recovery or timeout, but it does every adding and rollback based on 2PC algorithm (prewrite->ACK->commit->ACK).
 Time-failure just blocks the communication in the node for given time as it will not respond or read any commands in that time.
 
-The video showing the program running is accessible here: `dummy link`
+The video showing the program running is accessible here: `https://www.youtube.com/watch?v=0hCOjhNHbk8`

@@ -53,7 +53,8 @@ class Process(threading.Thread):
     def setAddingFinished(self, bool):
         self.addingFinished = bool
 
-    # Sets the time when thread is unavailable and will not respond to any request or commands
+    # Sets the time when thread is unavailable and will not respond to any request or commands. The commands will
+    # be left in queue and processed afterwards as the exact behaviour was not mentioned in the homework page.
     def timeFailure(self, seconds):
         self.timeToBeFailed = datetime.now() + timedelta(0, seconds)
         self.printStatement(self.name + " Time failure for " + str(seconds) + " seconds")
